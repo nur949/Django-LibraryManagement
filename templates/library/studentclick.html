@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>Mohammad Burhan</title>
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #f9f9fb;
+        color: #333;
+      }
+
+      .navbar {
+        background: linear-gradient(90deg, #4CAFEE, #6A5BE2);
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+      }
+
+      .navbar-brand {
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff !important;
+      }
+
+      .nav-link {
+        color: #fff !important;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #FFD166 !important;
+      }
+
+      /* Jumbotron styling */
+      .jumbotron {
+        background: linear-gradient(120deg, #6A5BE2, #4CAFEE);
+        color: white;
+        border-radius: 20px;
+        padding: 4rem 2rem;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+        margin: 40px auto;
+        max-width: 1000px;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+      }
+      .jumbotron p {
+        font-size: 18px;
+        opacity: 0.9;
+      }
+      .jumbotron hr {
+        border-top: 2px solid rgba(255,255,255,0.3);
+      }
+
+      /* Button styling */
+      .btn-lg {
+        background: #FFD166;
+        border: none;
+        color: #333;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.3s;
+        margin: 0 10px;
+      }
+      .btn-lg:hover {
+        background: #FF9F1C;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      /* Footer */
+      footer {
+        background: #2B2D42;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+
+
+
+  </head>
+  <body>
+      {% include "library/navbar.html" %}
+<br><br>
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, Student</h1>
+        <p class="lead">Welcome to Online Library Management System.</p>
+        <hr class="my-4">
+        <p>You can access various features after Login.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="studentsignup" role="button">SignUp</a>
+          <a class="btn btn-primary btn-lg" href="studentlogin" role="button">Login</a>
+        </p>
+      </div>
+
+
+      {% include "library/footer.html" %}
+  </body>
+</html>

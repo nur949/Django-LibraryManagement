@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mohammad Burhan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #f9f9fb;
+        color: #333;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(90deg, #4CAFEE, #6A5BE2);
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+      }
+      .navbar-brand {
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff !important;
+      }
+      .nav-link {
+        color: #fff !important;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #FFD166 !important;
+      }
+
+      /* Login Form Card */
+      .signup-form {
+        width: 500px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+        padding: 30px;
+      }
+      .signup-form h2 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+      }
+      .form-group label {
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .form-control {
+        border-radius: 10px;
+        box-shadow: none !important;
+      }
+      .form-control:focus {
+        border-color: #6A5BE2;
+      }
+
+      /* Buttons */
+      .btn-lg {
+        background: #FFD166;
+        border: none;
+        color: #333;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+      .btn-lg:hover {
+        background: #FF9F1C;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      /* Links */
+      .text-center a {
+        color: #6A5BE2;
+        font-weight: 600;
+      }
+      .text-center a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        background: #2B2D42;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+
+
+
+
+
+  </head>
+  <body style="background-color:#b6bde7;">
+    {% include "library/navbaradmin.html" %}
+    <br>
+    <br>
+<center><h3 style=" margin-bottom: 0px;"class = 'alert alert-success'>ISSUE BOOK TO STUDENT !</h3></center>
+    <div class="signup-form">
+        <form  method="post" class="form-horizontal">
+
+    			<center><h2>ISSUE BOOK TO STUDENT</h2></center>
+
+{% csrf_token %}
+
+            {% for field in form %}
+            <div class="form-group">
+              <label class="control-label col-xs-4">{{ field.label_tag }}</label>
+              <div class="col-xs-8">
+              {{ field }}
+               </div>
+            </div>
+            {% endfor %}
+
+
+    		<div class="form-group">
+    			<div class="col-xs-8 col-xs-offset-4">
+            <button type="submit" class="btn btn-primary btn-lg">ISSUE</button>
+    			</div>
+    		</div>
+        </form>
+    	<div class="text-center">View Issued Book to Student  <a href="viewissuedbook">Click here</a></div>
+    </div>
+
+
+
+
+    {% include "library/footer.html" %}
+  </body>
+</html>

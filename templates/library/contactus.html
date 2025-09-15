@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap + Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    <title>Contact Us!</title>
+
+    <!-- Same CSS Theme -->
+    <style type="text/css">
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #f9f9fb;
+        color: #333;
+      }
+
+      .navbar {
+        background: linear-gradient(90deg, #4CAFEE, #6A5BE2);
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+      }
+
+      .navbar-brand {
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff !important;
+      }
+
+      .nav-link {
+        color: #fff !important;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #FFD166 !important;
+      }
+
+      h3.alert {
+        max-width: 600px;
+        margin: 20px auto;
+        border-radius: 30px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+      }
+
+      .form-group {
+        max-width: 700px;
+        margin: auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+      }
+
+      .form-group h3 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .btn-lg {
+        background: #FFD166;
+        border: none;
+        color: #333;
+        font-weight: 700;
+        font-family: 'Nunito', sans-serif;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+      .btn-lg:hover {
+        background: #FF9F1C;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      footer {
+        background: #2B2D42;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "library/navbar.html" %}
+    <br><br>
+
+    <center>
+      <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
+
+      <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+          <p><h3>{{ form.as_p }}</h3></p>
+          <br>
+          <input type="submit" value="Send Message" class="btn btn-lg">
+        </div>
+      </form>
+    </center>
+
+    {% include "library/footer.html" %}
+  </body>
+</html>

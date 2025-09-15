@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+ <meta charset="utf-8">
+    <title>Issued Books - Admin</title>
+
+    <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #f9f9fb;
+      }
+
+      /* Page Title */
+      h3.page-title {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 0;
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(90deg, #4CAFEE, #6A5BE2);
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+      }
+
+      /* Table wrapper */
+      .table-container {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin: 30px auto;
+        width: 95%;
+        overflow-x: auto;
+      }
+
+      /* Table Header */
+      .table thead th {
+        background: linear-gradient(90deg, #4CAFEE, #6A5BE2);
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+      }
+
+      /* Table Body */
+      .table tbody td {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      /* Hover Effect */
+      .table-hover tbody tr {
+        transition: all 0.25s ease;
+      }
+
+      .table-hover tbody tr:hover {
+        background: #f1f5ff;
+        transform: scale(1.01);
+      }
+
+      /* Empty Message */
+      .empty-msg {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+        color: #888;
+        margin-top: 50px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    {% include "library/navbaradmin.html" %}
+    <br>
+    <br>
+    <h3 class="p-3 mb-2 bg-primary text-white" style = 'font-size: 50px;text-align:center;margin-bottom:0px;'>Issued books to Student !</h3>
+
+{% if li%}
+    <table class="redTable">
+    <thead>
+    <tr>
+    <th>Student Name</th>
+    <th>Student Enrollment</th>
+    <th>Book Name</th>
+    <th>Book Author</th>
+    <th>Issue Date</th>
+    <th>Expiry Date</th>
+    <th>Fine</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+    <td colspan="7">
+    <div class="links"></div>
+    </td>
+    </tr>
+    </tfoot>
+    <tbody>
+      {% for t in li %}
+        <tr>
+          <td>{{t.0}}</td>
+          <td>{{t.1}}</td>
+          <td>{{t.2}}</td>
+          <td>{{t.3}}</td>
+          <td>{{t.4}}</td>
+          <td>{{t.5}}</td>
+          <td>{{t.6}}</td>
+        </tr>
+        {%endfor%}
+    </tbody>
+    </table>
+    {%else%}
+    <h1> 0 book Issued</h1>
+    {%endif%}
+
+    <br><br><br><br><br><br><br><br><br>
+  {% include "library/footer.html" %}
+  </body>
+</html>
