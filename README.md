@@ -154,8 +154,28 @@ git clone https://github.com/nur949/Django-LibraryManagement.git
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 
-![Screenshot_15-9-2025_19720_127 0 0 1](https://github.com/user-attachments/assets/09f88d61-4adc-4041-9732-c2e73e38b7eb)
 
-![Screenshot_15-9-2025_19847_127 0 0 1](https://github.com/user-attachments/assets/5823413f-85a4-4069-873e-3fd4bd9614fa)
+## Demo
+![Screenshot_15-9-2025_223738_127 0 0 1](https://github.com/user-attachments/assets/7e4e16e3-58b6-4b24-a0a3-195a1c877018)
+![Screenshot_15-9-2025_223822_127 0 0 1](https://github.com/user-attachments/assets/8a777bc1-e704-4088-a49a-aeb5b65f4eff)
+![Screenshot_15-9-2025_223829_127 0 0 1](https://github.com/user-attachments/assets/b33a8a1f-ad06-4feb-a696-a8fcef6c75c0)
+![Screenshot_15-9-2025_223838_127 0 0 1](https://github.com/user-attachments/assets/67dbc149-2671-41c2-a3b4-de25399e5a52)
+![Screenshot_15-9-2025_223853_127 0 0 1](https://github.com/user-attachments/assets/226e5bc3-b235-4bb4-a676-f9aeb6cd52b1)
+![Screenshot_15-9-2025_22394_127 0 0 1](https://github.com/user-attachments/assets/bbcc4ea9-c590-4cc7-a8ca-ac17bf9f2523)
+![Screenshot_15-9-2025_223914_127 0 0 1](https://github.com/user-attachments/assets/78aafa89-87ed-4652-95b8-a4ececb49e6c)
+![Screenshot_15-9-2025_223921_127 0 0 1](https://github.com/user-attachments/assets/400d8487-2869-4afb-a824-aa5f9a7fdbc4)
+![Screenshot_15-9-2025_223929_127 0 0 1](https://github.com/user-attachments/assets/e651a231-dddc-40ed-abc6-ecc25be0e09d)
+![Screenshot_15-9-2025_223943_127 0 0 1](https://github.com/user-attachments/assets/3e5d97f7-ecd3-4ff5-851e-45a7b9f3e4c2)
+![Screenshot_15-9-2025_223959_127 0 0 1](https://github.com/user-attachments/assets/b411e77a-3236-46ba-bec1-9308d7f1c2f5)
+![Screenshot_15-9-2025_224015_127 0 0 1](https://github.com/user-attachments/assets/8b26c758-c73a-4f7e-bdcc-3430a550a5f0)
 
-![Screenshot_15-9-2025_1995_127 0 0 1](https://github.com/user-attachments/assets/b31208e5-4e95-43dc-9bfc-b6d8abfeb981)
+
+
+
+
+
+
+
+
+
+
