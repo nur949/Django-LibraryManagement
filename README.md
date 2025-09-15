@@ -15,7 +15,9 @@ This project is built with :
 ## Installation 📦
 ### To install Django Music Player, follow these steps:
 ## 1. Clone this repository:
->git clone https://github.com/nur949/Django-LibraryManagement.git
+```bash
+git clone https://github.com/nur949/Django-LibraryManagement.git
+```
 ## 2. Navigate to the project directory:
 
 ```bash
